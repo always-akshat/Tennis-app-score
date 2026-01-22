@@ -9,10 +9,16 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
+    "test:watch": "vitest --watch",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
     "test:e2e": "playwright test",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "db:start": "docker compose up -d",
+    "db:stop": "docker compose down",
+    "db:migrate": "cat supabase/migrations/*.sql | docker exec -i supabase-db psql -U postgres",
+    "db:seed": "cat supabase/seed.sql | docker exec -i supabase-db psql -U postgres",
+    "db:reset": "docker compose down -v && docker compose up -d && sleep 5 && npm run db:migrate && npm run db:seed"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
