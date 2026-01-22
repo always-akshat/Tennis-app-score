@@ -9,7 +9,7 @@ This document outlines proposed architectural simplifications. Let's discuss eac
 | # | Change | Effort | Impact | Status |
 |---|--------|--------|--------|--------|
 | 1 | Simplify Docker (8 → 1 container) | 30 min | High | Pending |
-| 2 | Remove Zustand dependency | 5 min | Low | Pending |
+| 2 | Remove Zustand dependency | 5 min | Low | **Done** |
 | 3 | Replace WebSockets with polling | 2 hours | High | Pending |
 | 4 | Consolidate 4 scoring hooks → 1 | 1 hour | Medium | Pending |
 | 5 | Merge score tables (3 → 1) | 3 hours | Medium | Pending |
