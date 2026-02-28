@@ -81,6 +81,55 @@ export function HomePage() {
         />
       </div>
 
+      {/* Khel Sathi - Social Impact Section */}
+      <div className="bg-gradient-to-r from-primary-600 to-primary-800 rounded-2xl p-8 text-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-primary-200 text-sm font-medium uppercase tracking-wider mb-2">
+            Khel Sathi - Sports for Social Good
+          </p>
+          <h2 className="text-3xl font-bold mb-4">
+            Every Child Deserves a Chance to Play
+          </h2>
+          <p className="text-primary-100 mb-6">
+            We're using sports to drive social change across India. From Dharavi to the Sundarbans,
+            from Kutch to Manipur - our volunteers are building a more equal, healthier nation
+            through grassroots sports programs.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+            <div className="bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+              <p className="text-2xl font-bold">1,495</p>
+              <p className="text-xs text-primary-200">Youth Reached</p>
+            </div>
+            <div className="bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+              <p className="text-2xl font-bold">58%</p>
+              <p className="text-xs text-primary-200">Girls Participation</p>
+            </div>
+            <div className="bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+              <p className="text-2xl font-bold">8</p>
+              <p className="text-xs text-primary-200">Communities</p>
+            </div>
+            <div className="bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+              <p className="text-2xl font-bold">7</p>
+              <p className="text-xs text-primary-200">States</p>
+            </div>
+          </div>
+          <div className="flex justify-center gap-4 flex-wrap">
+            <Link
+              to="/impact"
+              className="inline-flex items-center px-6 py-3 rounded-lg bg-white text-primary-700 font-semibold hover:bg-primary-50 transition-colors"
+            >
+              View Impact Dashboard
+            </Link>
+            <Link
+              to="/impact/volunteer"
+              className="inline-flex items-center px-6 py-3 rounded-lg bg-primary-500 text-white font-semibold hover:bg-primary-400 transition-colors border border-primary-400"
+            >
+              Become a Volunteer
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Supported sports */}
       <div className="text-center py-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Supported Sports</h2>

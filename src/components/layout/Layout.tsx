@@ -10,6 +10,10 @@ export function Layout() {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/tournaments', label: 'Tournaments' },
+    { path: '/impact', label: 'Khel Sathi' },
+    { path: '/impact/issues', label: 'Issues' },
+    { path: '/impact/volunteer', label: 'Volunteer' },
+    { path: '/impact/stories', label: 'Stories' },
   ];
 
   return (
@@ -72,8 +76,8 @@ export function Layout() {
       </header>
 
       {/* Mobile navigation */}
-      <nav className="md:hidden bg-white border-b border-gray-200 px-4 py-2">
-        <div className="flex gap-4">
+      <nav className="md:hidden bg-white border-b border-gray-200 px-4 py-2 overflow-x-auto">
+        <div className="flex gap-2 min-w-max">
           {navItems.map((item) => (
             <Link
               key={item.path}

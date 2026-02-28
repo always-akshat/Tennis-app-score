@@ -9,6 +9,12 @@ import { TournamentListPage } from '@/pages/tournaments/TournamentListPage';
 import { TournamentDetailPage } from '@/pages/tournaments/TournamentDetailPage';
 import { FixtureDetailPage } from '@/pages/fixtures/FixtureDetailPage';
 import { ScorerPage } from '@/pages/fixtures/ScorerPage';
+import {
+  ImpactDashboardPage,
+  CommunityIssuesPage,
+  VolunteerHubPage,
+  ImpactStoriesPage,
+} from '@/features/impact';
 
 function App() {
   const queryClient = useQueryClient();
@@ -39,6 +45,10 @@ function App() {
         <Route path="/tournaments/:slug" element={<TournamentDetailPage />} />
         <Route path="/tournaments/:slug/fixtures/:fixtureId" element={<FixtureDetailPage />} />
         <Route path="/tournaments/:slug/fixtures/:fixtureId/score" element={<ScorerPage />} />
+        <Route path="/impact" element={<ImpactDashboardPage />} />
+        <Route path="/impact/issues" element={<CommunityIssuesPage />} />
+        <Route path="/impact/volunteer" element={<VolunteerHubPage />} />
+        <Route path="/impact/stories" element={<ImpactStoriesPage />} />
       </Route>
     </Routes>
   );
